@@ -1,0 +1,27 @@
+// obtener libros por autor
+
+query getBoocks ($autor:String){
+  boocks(autor:$autor){
+    title,
+    autor
+  }
+}
+
+///query variables
+{
+  "autor": "xxx3"
+}
+
+// obtener libros por id
+query getBoock ($id:Int!){
+  boock(id:$id){
+    title,
+    autor,
+    id
+  }
+}
+
+///query variables
+{
+  "id": 5
+}
